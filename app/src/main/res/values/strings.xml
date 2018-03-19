@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Doctors</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Find">
+        The First Application Really Helping You,
+        to Find best Doctors and Hospitals.
+    </string>
+</resources>

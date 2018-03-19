@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b4"
+    android:paddingTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/luncher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#026960"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/app_name"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:text="@string/Find"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:textColor="#049488"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/nearHospital"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/button_selector1"
+            android:drawableEnd="@drawable/search"
+            android:elevation="0dp"
+            android:lineSpacingExtra="10sp"
+            android:text="المستشفيات القريبة"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            tools:ignore="HardcodedText,UnusedAttribute"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/starHospital"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nearHospital"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/button_selector"
+            android:drawableEnd="@drawable/star_30"
+            android:lineSpacingExtra="10sp"
+            android:text="المستشفيات المميزة"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="lollipop"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</RelativeLayout>
