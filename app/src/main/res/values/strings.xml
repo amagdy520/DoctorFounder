@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">Doctors</string>
+    <string name="app_name">طبيبي</string>
     <string name="title_activity_maps">Map</string>
     <string name="Find">
-        The First Application Really Helping You,
-        to Find best Doctors and Hospitals.
+        أول برنامج متخصص لديه مجموعة كبيرة من الأطباء لمساعدتك في إيجاد الطبيب المناسب لك.
     </string>
     <string name="search">Search Hospital</string>
-    <string name="hospital">Hospitals</string>
+    <string name="hospital">المستشفيات حولك</string>
     <string name="Medical">التخصصات الطبية</string>
 
     <string-array name="surgery_doctor">
@@ -18,6 +17,110 @@
         <item>01143124309</item>
     </string-array>
     <string-array name="surgery_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="eye_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="eye_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="eye_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="bone_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="bone_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="bone_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="brain_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="brain_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="brain_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="heart_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="heart_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="heart_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="stomach_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="stomach_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="stomach_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="nose_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="nose_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="nose_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="tooth_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="tooth_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="tooth_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
+
+    <string-array name="radiology_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="radiology_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="radiology_doctor_address">
         <item>Tanta</item>
         <item>Benha</item>
     </string-array>

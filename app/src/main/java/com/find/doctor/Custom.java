@@ -7,32 +7,50 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 public class Custom extends AppCompatActivity {
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
+        intent = new Intent(Custom.this,ListOfDoctors.class);
     }
     public void onClick(View view){
         switch (view.getId()){
             case R.id.surgary:
-                Intent intent = new Intent(Custom.this,ListOfDoctors.class);
+                intent.putExtra("type","surgary");
                 startActivity(intent);
                 break;
             case R.id.eye:
+                intent.putExtra("type","eye");
+                startActivity(intent);
                 break;
             case R.id.bone:
+                intent.putExtra("type","bone");
+                startActivity(intent);
                 break;
             case R.id.brain:
+                intent.putExtra("type","brain");
+                startActivity(intent);
                 break;
             case R.id.heart:
+                intent.putExtra("type","heart");
+                startActivity(intent);
                 break;
             case R.id.stomach:
+                intent.putExtra("type","stomach");
+                startActivity(intent);
                 break;
             case R.id.nose:
+                intent.putExtra("type","nose");
+                startActivity(intent);
                 break;
             case R.id.tooth:
+                intent.putExtra("type","tooth");
+                startActivity(intent);
                 break;
             case R.id.radiology:
+                intent.putExtra("type","radiology");
+                startActivity(intent);
                 break;
         }
     }

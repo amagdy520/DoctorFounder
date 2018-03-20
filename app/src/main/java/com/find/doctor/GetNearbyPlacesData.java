@@ -1,14 +1,7 @@
 package com.find.doctor;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v7.widget.CardView;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,13 +12,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-import java.util.zip.Inflater;
 
-import static java.security.AccessController.getContext;
-
-/**
- * @author Priyanka
- */
 
 class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
 
@@ -65,7 +52,7 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             MarkerOptions markerOptions = new MarkerOptions();
             HashMap<String, String> googlePlace = nearbyPlaceList.get(i);
 
-            String placeName = googlePlace.get("place_name");
+            final String placeName = googlePlace.get("place_name");
             String vicinity = googlePlace.get("vicinity");
             double lat = Double.parseDouble( googlePlace.get("lat"));
             double lng = Double.parseDouble( googlePlace.get("lng"));

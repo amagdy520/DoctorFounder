@@ -14,21 +14,109 @@ public class ListOfDoctors extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private QuoteAdapter mAdapter;
+    String key;
     String[] mName;
     String[] mPhone;
     String[] mAddress;
+    TextView mScreenTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_of_doctors);
-        mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        mName = getResources().getStringArray(R.array.surgery_doctor);
-        mPhone =getResources().getStringArray(R.array.surgery_doctor_phone);
-        mAddress = getResources().getStringArray(R.array.surgery_doctor_address);
-        mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
-        mRecyclerView.setAdapter(mAdapter);
+        key = getIntent().getExtras().getString("type");
+        mScreenTitle = (TextView) findViewById(R.id.titleOfList);
+        switch (key){
+            case "surgary":
+                mName = getResources().getStringArray(R.array.surgery_doctor);
+                mPhone =getResources().getStringArray(R.array.surgery_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.surgery_doctor_address);
+                mScreenTitle.setText("أطباء الجراحة");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "eye":
+                mName = getResources().getStringArray(R.array.eye_doctor);
+                mPhone =getResources().getStringArray(R.array.eye_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.eye_doctor_address);
+                mScreenTitle.setText("أطباء العيون");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "bone":
+                mName = getResources().getStringArray(R.array.bone_doctor);
+                mPhone =getResources().getStringArray(R.array.bone_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.bone_doctor_address);
+                mScreenTitle.setText("أطباء العظام");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "brain":
+                mName = getResources().getStringArray(R.array.brain_doctor);
+                mPhone =getResources().getStringArray(R.array.brain_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.brain_doctor_address);
+                mScreenTitle.setText("أطباء المخ والأعصاب");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "heart":
+                mName = getResources().getStringArray(R.array.heart_doctor);
+                mPhone =getResources().getStringArray(R.array.heart_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.heart_doctor_address);
+                mScreenTitle.setText("أطباء القلب");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "stomach":
+                mName = getResources().getStringArray(R.array.stomach_doctor);
+                mPhone =getResources().getStringArray(R.array.stomach_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.stomach_doctor_address);
+                mScreenTitle.setText("أطباء الباطنة");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "nose":
+                mName = getResources().getStringArray(R.array.nose_doctor);
+                mPhone =getResources().getStringArray(R.array.nose_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.nose_doctor_address);
+                mScreenTitle.setText("أطباء الأنف");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "tooth":
+                mName = getResources().getStringArray(R.array.tooth_doctor);
+                mPhone =getResources().getStringArray(R.array.tooth_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.tooth_doctor_address);
+                mScreenTitle.setText("أطباء الأسنان");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+            case "radiology":
+                mName = getResources().getStringArray(R.array.radiology_doctor);
+                mPhone =getResources().getStringArray(R.array.radiology_doctor_phone);
+                mAddress = getResources().getStringArray(R.array.radiology_doctor_address);
+                mScreenTitle.setText("أطباء الأشعة");
+                mRecyclerView = (RecyclerView) findViewById(R.id.ListOfData);
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                mAdapter = new QuoteAdapter(mName,mPhone,mAddress);
+                mRecyclerView.setAdapter(mAdapter);
+                break;
+        }
     }
     private class QuoteHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView mNameTextView, mPhoneTextView, mAddressTextView;
