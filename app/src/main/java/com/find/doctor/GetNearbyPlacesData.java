@@ -1,7 +1,14 @@
 package com.find.doctor;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.AsyncTask;
+import android.support.v7.widget.CardView;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +19,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.zip.Inflater;
+
+import static java.security.AccessController.getContext;
 
 /**
  * @author Priyanka
@@ -22,7 +32,6 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     private String googlePlacesData;
     private GoogleMap mMap;
     String url;
-
     @Override
     protected String doInBackground(Object... objects){
         mMap = (GoogleMap)objects[0];
@@ -36,6 +45,7 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
         }
 
         return googlePlacesData;
+
     }
 
     @Override
@@ -64,8 +74,6 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             markerOptions.position(latLng);
             markerOptions.title(placeName + " : "+ vicinity);
             markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.pin));
-
-
             mMap.addMarker(markerOptions);
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(10));

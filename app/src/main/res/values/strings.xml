@@ -5,4 +5,20 @@
         The First Application Really Helping You,
         to Find best Doctors and Hospitals.
     </string>
+    <string name="search">Search Hospital</string>
+    <string name="hospital">Hospitals</string>
+    <string name="Medical">التخصصات الطبية</string>
+
+    <string-array name="surgery_doctor">
+        <item>Dr.Ahmed</item>
+        <item>Dr.Mohamed</item>
+    </string-array>
+    <string-array name="surgery_doctor_phone">
+        <item>01091920361</item>
+        <item>01143124309</item>
+    </string-array>
+    <string-array name="surgery_doctor_address">
+        <item>Tanta</item>
+        <item>Benha</item>
+    </string-array>
 </resources>

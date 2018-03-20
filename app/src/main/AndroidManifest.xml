@@ -23,19 +23,25 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Splash"
-            android:theme="@style/SplashTheme"
-            >
+        <activity
+            android:name=".Splash"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/FullScreenTheme"/>
-        <activity android:name=".MapsActivity"
-            android:theme="@style/FullScreenTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".MapsActivity"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Custom"
+            android:theme="@style/FullScreenTheme" />
+        <activity android:name=".ListOfDoctors"></activity>
     </application>
 
 </manifest>

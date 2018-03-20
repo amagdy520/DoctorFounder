@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         mStarHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Custom.class);
+                startActivity(intent);
             }
         });
 
