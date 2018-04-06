@@ -1,6 +1,7 @@
 package com.find.doctor;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -51,6 +52,12 @@ public class Custom extends AppCompatActivity {
             case R.id.radiology:
                 intent.putExtra("type","radiology");
                 startActivity(intent);
+                break;
+            case R.id.huraymala:
+                Uri gmmIntentUri = Uri.parse("google.streetview:cbll=25.1098486,46.0909536");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
                 break;
         }
     }
