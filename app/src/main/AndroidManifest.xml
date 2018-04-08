@@ -41,7 +41,8 @@
         <activity
             android:name=".Custom"
             android:theme="@style/FullScreenTheme" />
-        <activity android:name=".ListOfDoctors"></activity>
+        <activity android:name=".ListOfDoctors" />
+        <activity android:name=".SmallHospital"></activity>
     </application>
 
 </manifest>

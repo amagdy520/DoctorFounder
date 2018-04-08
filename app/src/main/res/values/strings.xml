@@ -7,6 +7,7 @@
     <string name="search">Search Hospital</string>
     <string name="hospital">المستشفيات حولك</string>
     <string name="Medical">التخصصات الطبية</string>
+    <string name="Medical2">العيادات المتخصصة</string>
 
     <string-array name="surgery_doctor">
         <item>Dr.Ahmed</item>

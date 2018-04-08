@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     TranslateAnimation anim1,anim2;
-    Button mNearHospital, mStarHospital;
+    Button mNearHospital, mStarHospital, mSmallHospital;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,10 +21,13 @@ public class MainActivity extends AppCompatActivity {
         anim2.setDuration(1000);
         mNearHospital = (Button) findViewById(R.id.nearHospital);
         mStarHospital = (Button) findViewById(R.id.starHospital);
+        mSmallHospital= (Button) findViewById(R.id.smallHospital);
         mNearHospital.setAnimation(anim1);
         mNearHospital.setVisibility(View.VISIBLE);
         mStarHospital.setAnimation(anim2);
         mStarHospital.setVisibility(View.VISIBLE);
+        mSmallHospital.setAnimation(anim1);
+        mSmallHospital.setVisibility(View.VISIBLE);
         mNearHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        mSmallHospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,SmallHospital.class);
+                startActivity(intent);
+            }
+        });
     }
 }
